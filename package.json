@@ -9,9 +9,10 @@
     "start": "next start",
     "lint": "next lint",
     "predeploy":"npm run build",
-    "deploy":"gh-pages -d build"
+    "deploy":"gh-pages -d build",
+    "export": "next export"
    },
-    "export": "next export",
+    
   "dependencies": {
     "next": "13.4.3",
     "react": "18.2.0",
