@@ -7,10 +7,10 @@ function App() {
   const [isClicked, setIsClicked] = useState(false); // State variable to track button click
 
   const { unityProvider } = useUnityContext({
-    loaderUrl: "https://dev2-data.thetaedgestore.com/api/v2/data/0xa029127250240be1de0939a31e09e304ec070f0c45de3a302f361acc94176a5b/FirstBuild.loader.js",
-    dataUrl: "https://dev2-data.thetaedgestore.com/api/v2/data/0xa029127250240be1de0939a31e09e304ec070f0c45de3a302f361acc94176a5b/FirstBuild.data",
-    frameworkUrl: "https://dev2-data.thetaedgestore.com/api/v2/data/0xa029127250240be1de0939a31e09e304ec070f0c45de3a302f361acc94176a5b/FirstBuild.framework.js",
-    codeUrl: "https://dev2-data.thetaedgestore.com/api/v2/data/0xa029127250240be1de0939a31e09e304ec070f0c45de3a302f361acc94176a5b/FirstBuild.wasm",
+    loaderUrl: "https://dev2-data.thetaedgestore.com/api/v2/data/0x0b32a27cff4fae79a2e6779cb431d0052eef892f8c008807a41e906f9ed04717/FirstBuild.loader.js",
+    dataUrl: "https://dev2-data.thetaedgestore.com/api/v2/data/0x0b32a27cff4fae79a2e6779cb431d0052eef892f8c008807a41e906f9ed04717/FirstBuild.data",
+    frameworkUrl: "https://dev2-data.thetaedgestore.com/api/v2/data/0x0b32a27cff4fae79a2e6779cb431d0052eef892f8c008807a41e906f9ed04717/FirstBuild.framework.js",
+    codeUrl: "https://dev2-data.thetaedgestore.com/api/v2/data/0x0b32a27cff4fae79a2e6779cb431d0052eef892f8c008807a41e906f9ed04717/FirstBuild.wasm",
   });
 
   const handleClick = () => {
