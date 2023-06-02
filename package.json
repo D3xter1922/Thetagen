@@ -3,21 +3,24 @@
   "name": "webappcdn",
   "version": "0.1.0",
   "private": true,
-   "scripts": {
+  "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "export": "next export"
-   },
-    
+  },
   "dependencies": {
+    "fs": "^0.0.1-security",
+    "net": "^1.0.2",
     "next": "13.4.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-unity-webgl": "^9.4.0"
+    "react-unity-webgl": "^9.4.1",
+    "request": "^2.88.2",
+    "tls": "^0.0.1"
   },
   "devDependencies": {
     "eslint": "8.41.0",
