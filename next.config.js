@@ -1,8 +1,4 @@
 module.exports = (phase, { defaultConfig }) => {
-
-  images: {
-    unoptimized: true
-}
   return {
     ...defaultConfig,
 
@@ -18,4 +14,11 @@ module.exports = (phase, { defaultConfig }) => {
       return config
     },
   }
+}
+
+module.exports={
+  images: {
+    loader: 'imgix',
+    path: '/',
+  },
 }
