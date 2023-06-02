@@ -1,4 +1,8 @@
 module.exports = (phase, { defaultConfig }) => {
+
+  images: {
+    unoptimized: true
+}
   return {
     ...defaultConfig,
 
