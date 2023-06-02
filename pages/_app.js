@@ -10,10 +10,10 @@ function App() {
   const [rendererLoaded, setRendererLoaded] = useState(false);
 
   const { unityProvider, addEventListener, removeEventListener, sendMessage, isLoaded } = useUnityContext({
-    loaderUrl: "build/FirstBuild.loader.js",
-    dataUrl: "build/FirstBuild.data",
-    frameworkUrl: "build/FirstBuild.framework.js",
-    codeUrl: "build/FirstBuild.wasm",
+    loaderUrl: "https://dev2-data.thetaedgestore.com/api/v2/data/0x6eb1dfbb73b7037e9354e681a5d1457acd51dd2918cb1867fb51152864a644a5",
+    dataUrl: "https://dev2-data.thetaedgestore.com/api/v2/data/0x405548a55a0c2832b38b209ccfa64b6733b6ce4bf1de620f3cfe9899580e6bee",
+    frameworkUrl: "https://dev2-data.thetaedgestore.com/api/v2/data/0x52c50e2fb9512741f37a8db9a4223a2ca5f833f98344cff5e9f310298479c0d3",
+    codeUrl: "https://dev2-data.thetaedgestore.com/api/v2/data/0xd7be2e22e075e2291bd446382d90234284b77cbfd30206c5b4280b657bf0f3d2",
   });
   
   
@@ -177,7 +177,7 @@ function App() {
   return (
     <div>
       {isClicked ? ( // Render Unity component only when the button is clicked
-        <><button onClick={ConnectMetamask}>ConnectMetamask</button><Unity unityProvider={unityProvider} style={{ width: 1900, height: 1000 }} /></>
+        <><Unity unityProvider={unityProvider} style={{ width: "100%", height: "100%" }} /></>
       ) : (
         <button onClick={handleClick}>Click me</button>
       )}
